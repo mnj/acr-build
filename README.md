@@ -143,7 +143,7 @@ jobs:
           folder: src/docker
           dockerfile: ../../dockerfiles/Dockerfile
           branch: main
-          build_args: '[{"arg_one":"value_one"}, {"arg_two":"value_two"}]'
+          build_args: --build-arg VAR1=VAL1 --build-arg VAR2=VAL2 --build-arg VAR3=VAL3
 ```
 
 # Contributing

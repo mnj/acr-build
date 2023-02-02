@@ -39,7 +39,7 @@ inputs:
     description: "The location of the Dockerfile; defaults to ./Dockerfile"
     required: false
   build_args:
-    description: "JSON specifying key=value pairs as as Docker build arguments"
+    description: "Raw parameters to pass to the build command"
     required: false
 runs:
   using: "docker"
