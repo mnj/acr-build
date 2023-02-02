@@ -9,6 +9,8 @@ IMAGE_PART=""
 #         BUILD_ARGS=`echo -n ${INPUT_BUILD_ARGS:-''} |jq -j '.[] | keys[] as $k | values[] as $v |  "--build-arg \($k)=\"\($v)\" "'`
 # fi
 
+echo "Build args: ${INPUT_BUILD_ARGS}"
+
 if [ "$INPUT_IMAGE" != "" ]; then
         IMAGE_PART="/${INPUT_IMAGE}"
 fi
